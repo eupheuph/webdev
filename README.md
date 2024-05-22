@@ -1,3 +1,4 @@
 # webdev
-html and css learning projects
-icludes projects and codes that i have done  or im still working on.Creating non-responsive webpages that i intend to make responsive using javascript.
+<b>Check this link 🔗 </b>
+
+📌 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout

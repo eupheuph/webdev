@@ -1,0 +1,14 @@
+ /*grid class  */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* So, I made this class for grid layout. It's direct from MDN (📌check link in description). Basically you just need to define a grid class, 
+and the justify the spacing in the grid depending on the number of columns you want. You then give that grid class to a <div> that acts as the container 🍱 
+and the set the internal components of your grid in groups of smaller <div>s.
+
+One major challenger here would be that you have to have the same size of images. There's one that's toooooooooo big and it displaces the entire grid.👀 
+
+
+The 🔗 link I've given will take you to the page detailing all about it. */
