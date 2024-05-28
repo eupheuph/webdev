@@ -4,8 +4,249 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product landing page</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/style.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
+  <style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+      max-width: 1000px;
+      border-radius: 20%;
+      justify-items: center;
+      background-color:antiquewhite;
+      padding-left: 12%;
+      padding-right: 12%;
+  }
+  div{
+      background-color:#86003c;
+      text-align: center;
+      
+  }
+  section{
+      background-color: antiquewhite;
+      height:40px;
+      text-align: right;
+      text-transform: capitalize;
+      padding-right: 20px;
+  }
+  hr{
+      height: 4px;
+      color: gray;
+      
+      
+  }
+  
+  h1{
+      text-align: center;
+      font-family: Impact,  sans-serif;
+      font-size: 15vh;
+  }
+  h1,.motto{
+      color: deeppink;
+      border-color: rgb(85, 6, 160);
+  }
+  h2{
+  text-transform: uppercase;
+  text-decoration: overline;
+  }
+  h3{
+      text-transform: capitalize;
+      text-decoration: underline;
+  }
+  .new{
+      font-size: 30px;
+      color:#2a2438;
+  }
+  .motto{
+      font-family:  sans-serif;
+      font-size: 7vh;
+      font-style: oblique;
+      text-transform: uppercase;
+   text-indent: 2mm;
+  
+  }
+  .intro{
+      width:300px;
+      border-radius: 50px;
+      float:left;
+      margin-right:20px;
+      padding-left:20px;
+  }
+  .main{
+      width:750px;
+      border-radius:0px;
+      padding-top:10px;
+  }
+  .view{
+      width:200px;
+      border-radius: 50px;
+      margin-top: 10px; 
+  }
+  .gallery{
+      width:80%;
+      margin: 100px auto 50px;
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      grid-gap:75px;
+      overflow: auto;
+     
+  }
+  .shop{
+  
+      display:flexbox;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:16px;
+      justify-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      height: 300px;
+    
+    
+  
+  }
+  .shop img {
+      width: 100%;
+      max-width: 350px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+     cursor:pointer;
+    }
+    .shop:hover{
+       transform:scale(0.8) rotate(-15deg);
+    }
+    .desc{
+      line-height:20px;
+    }
+  .name{
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align: center;
+  
+  
+  }
+  .purpose{
+  text-align: center;
+  
+  
+  }
+  .price{
+  font-weight: bold;
+  text-align: center;
+  
+  }
+  .save{
+      text-decoration: line-through;
+  }
+  .header li{
+      list-style-type:none;
+      display: inline-block;
+     
+  }
+  
+  /*.contacts li{
+      display:inline;
+      list-style-type: none;
+      justify-items: space-between;
+  }*/
+  footer{
+  background:#2a2438;
+  padding-left: 20px;
+  color: white;
+  }
+  .container{
+    background:#2a2438;
+    width:750px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+  }
+  .footer-content{
+    width:100%;
+    background:#2a2438;
+  }
+  .footer-content p{ 
+    width:190px;
+    padding:7px;
+    margin:auto;
+  }
+  .footer-content ul{
+text-align:center;
+  }
+  .list li{
+      position: relative;
+  list-style-type: none;
+  text-align: center;
+     width: auto;
+  }
+  .list li::before{
+    position:absolute ;
+    transform: translate(-50%,-50%);
+    transition-duration: 5s;
+    left:50%;
+    top:100%;
+    height:2px;
+
+  }
+  .social-icons{
+    text-align: center;
+    padding: 0;
+  }
+  .social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+  }
+  .social-icons i{
+color:white;
+font-size: 25px;
+  }
+  a:hover{
+    color: deeppink;
+  }
+  .social-icons i:hover{
+color: deeppink;
+  } 
+  .bottom-bar{
+    background:deeppink;
+    text-align:center;
+    padding:10px 0;
+    margin-top: 50px;
+  }
+  .bottom-bar p{
+color:#2a2438;
+font-size: 14px;
+width:100%;
+  }
+  button{
+      width:100px;
+      height: 30px;
+  }
+  blockquote{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  }
+  blockquote::before{
+  content:"'";
+  }
+  blockquote::after{
+      content:"'";
+  }
+  .author{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight:600;
+  }
+  
+  
+  </style>
   <body>
     <div>
       <h1>B&G</h1>
@@ -160,6 +401,41 @@
   </div>
   </body>
   </div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <h4>Contact Us</h4>
+      <p>Email:blackunicorn1@outlook.com</p>
+      <p>Phone:+564 763 982</p>
+      <p>Address: NAIROBI, KENYA</p>
+    </div>
+  <div class="footer-content">
+    <ul class="list">
+      <h4>Quick links</h4>
+      <li><a href="">about us</a></li>
+        <li><a href="">Reviews</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href="">Shipping</a></li>
+        <li><a href="">FAQs</a></li>
+    </ul>
+  </div>
+  <div class="footer-content">
+    <h4>Follow us</h4>
+    <ul class="social-icons">
+    <li><a href="http://www.twitter.com"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #63E6BE;"> </i></a></li>
+        <li><a href="http://www.facebook.com"><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(8, 8, 105)"></i></a></li>
+        <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl" style="color: #bd0a49;"></i></a></li>
+  </ul>
+      </div>
+
+  </div>
+  <div class="bottom-bar">
+    <p>&copy;copyright 2024 reserved by <b>B&G</b></p>
+  </div>
+</footer>
+  <!--
   <footer>
     <h4>ABOUT US</h4>
     <nav class="footer">
@@ -181,9 +457,11 @@
       <ul>
         <li><a href="black.unicorn1@outlook.com">Mail us</a></li>
         <li><a href="tel:+254 999 543 641">Tel</a></li>
+        <li><a href="http://www.twitter.com"></a><i class="fa-brands fa-square-twitter fa-2xl" style="color: #63E6BE;"> </a></i></li>
+        <li><a href="http://www.facebook.com"></a><i class="fa-brands fa-facebook fa-2xl" style="color:rgb(8, 8, 105)"></a></i></li>
         <li>NAIROBI</li>
       </ul>
     </nav>
-    <p>copyright 2024 reserved by <b>B&G</b></p>
-  </footer>
+    <p>&copy;copyright 2024 reserved by <b>B&G</b></p>
+  </footer>-->
 </html>
